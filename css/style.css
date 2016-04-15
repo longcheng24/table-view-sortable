@@ -1,0 +1,40 @@
+p{
+  margin-left: 10px;
+}
+.rowTable{
+  display: flex;
+  flex-direction: column;
+  width: 800px;
+  margin: 0 auto;
+  cursor: move;
+}
+.rowHeader{
+  display: flex;
+  border: 1px solid #3e3e3e;
+  color:DeepSkyBlue;
+}
+
+.rowHeader :nth-child(1), .brand > p, .rowHeader :nth-child(4), .productName > p{
+  width:150px;
+}
+.rowHeader :nth-child(2),.rowHeader :nth-child(3), .mainCategory > p, .subCategory > p{
+  width:250px
+}
+
+.brand, .mainCategory, .subCategory{
+  display: flex;
+
+}
+.brand{
+  border: 1px solid #3e3e3e;
+  border-top: none;
+}
+.bigMain,.bigSub,.bigProduct{
+  border-left: 1px solid #3e3e3e;
+}
+.mainCategory, .subCategory, .productName{
+  border-bottom: 1px solid #3e3e3e;
+}
+.bigMain > .mainCategory:last-child, .bigSub > .subCategory:last-child, .bigProduct >.productName:last-child{
+  border-bottom:0
+}
